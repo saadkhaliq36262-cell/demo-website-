@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with The Artisan Brew. Reserve a table, ask about catering, or find our opening hours and directions.">
+    <title>Contact Us & Reservations | The Artisan Brew</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">The Artisan Brew</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <a href="contact.html" class="nav-cta btn-primary">Reserve a Table</a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1920&q=80');">
+        <div class="container header-content animate-on-scroll">
+            <h1 class="page-title">Contact & Reservations</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span class="separator">&gt;</span> <span class="current">Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- CONTACT & RESERVATIONS SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <p class="subtitle">GET IN TOUCH</p>
+                    <h2 class="section-title">We’d Love to Hear From You</h2>
+                    <p class="section-subtitle">Book your table in advance, inquire about private events, or send us your thoughts.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper animate-on-scroll">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="reservation">Table Reservation</option>
+                                        <option value="private-events">Private Events & Catering</option>
+                                        <option value="feedback">General Inquiries / Feedback</option>
+                                        <option value="careers">Careers & Barista Auditions</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Include your preferred date, party size, or specific requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="align-self: flex-start; width: auto;">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Channels -->
+                    <div class="contact-info-wrapper animate-on-scroll">
+                        <h3>Direct Channels</h3>
+                        <p>Feel free to reach us through phone, email, or stop by our coffee bar directly.</p>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Artisan Street, Downtown Quarter<br>City Center, State 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">📞</div>
+                            <div>
+                                <h4>Phone Inquiries</h4>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@theartisanbrew.com<br>events@theartisanbrew.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">🕐</div>
+                            <div>
+                                <h4>Service Hours</h4>
+                                <p>Monday - Friday: 7:00 AM - 10:00 PM<br>Saturday - Sunday: 8:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/15551234567" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            💬 Quick Chat on WhatsApp
+                        </a>
+                        
+                        <div class="contact-social">
+                            <h4>Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook" class="social-link">FB</a>
+                                <a href="#" aria-label="Instagram" class="social-link">IG</a>
+                                <a href="#" aria-label="Twitter" class="social-link">TW</a>
+                                <a href="#" aria-label="TikTok" class="social-link">TK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section class="map-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Find Our Cafe</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076794379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1637186586000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="420" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="The Artisan Brew Location">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">The Artisan Brew</h3>
+                    <p>A premium cafe and dining experience crafted for those who appreciate the finer things in life.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About Us</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday<br>7:00 AM - 10:00 PM</p>
+                    <p>Saturday - Sunday<br>8:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 123 Artisan Street, Downtown<br>City, State 10001</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ hello@theartisanbrew.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Artisan Brew. All rights reserved. | <em>Demo Website — Not a real business</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore photos of our handcrafted latte art, artisanal dining dishes, and warm cafe ambiance at The Artisan Brew.">
+    <title>Gallery | The Artisan Brew</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">The Artisan Brew</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html" class="nav-cta btn-primary">Reserve a Table</a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1920&q=80');">
+        <div class="container header-content animate-on-scroll">
+            <h1 class="page-title">Visual Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span class="separator">&gt;</span> <span class="current">Gallery</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- GALLERY SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <p class="subtitle">MOMENTS & FLAVORS</p>
+                    <h2 class="section-title">A Feast for the Senses</h2>
+                    <p class="section-subtitle">Take a closer look at our daily creations, warm aesthetics, and cozy dining atmosphere.</p>
+                </div>
+
+                <!-- GALLERY FILTER -->
+                <div class="gallery-filter-container animate-on-scroll">
+                    <div class="gallery-filter">
+                        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+                        <button class="gallery-filter-btn" data-filter="coffee">Coffee & Barista</button>
+                        <button class="gallery-filter-btn" data-filter="food">Artisan Food</button>
+                        <button class="gallery-filter-btn" data-filter="interior">Cafe Ambiance</button>
+                    </div>
+                </div>
+
+                <!-- GALLERY GRID -->
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Signature Latte Art" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Signature Latte Art</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-category="interior">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Our Main Dining Hall" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Our Dining Space</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="food">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Farm Fresh Ingredients" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Fresh Ingredients</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="food">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Chef's Special Platter" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Chef's Special</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="interior">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Cozy Window Corner" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Cozy Corner</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="food">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Sweet Dessert Indulgence" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Sweet Indulgence</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Morning Pour-Over Brew" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Morning Brew</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="food">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Wood-Fired Pizza" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Wood-Fired Pizza</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="interior">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="The Artisan Coffee Bar" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">The Coffee Bar</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="food">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Classic Smash Burger" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Classic Smash Burger</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Afternoon Coffee & Pastry" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Afternoon Coffee</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll" data-category="interior">
+                        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80" alt="Weekend Evening Atmosphere" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">🔍</span>
+                            <p class="gallery-caption">Weekend Vibes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta section animate-on-scroll" id="cta">
+            <div class="container text-center">
+                <h2 class="cta-title">Share Your Experience</h2>
+                <p class="cta-description">Tag us on Instagram @theartisanbrew and use #ArtisanBrewMoments to be featured in our community spotlight.</p>
+                <div class="cta-buttons">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-primary">Follow on Instagram</a>
+                    <a href="contact.html" class="btn btn-secondary">Visit Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX MARKUP -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <img src="" alt="Enlarged gallery view" class="lightbox-image" id="lightboxImage">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">The Artisan Brew</h3>
+                    <p>A premium cafe and dining experience crafted for those who appreciate the finer things in life.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About Us</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday<br>7:00 AM - 10:00 PM</p>
+                    <p>Saturday - Sunday<br>8:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 123 Artisan Street, Downtown<br>City, State 10001</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ hello@theartisanbrew.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Artisan Brew. All rights reserved. | <em>Demo Website — Not a real business</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
